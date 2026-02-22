@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Comeback | For My Champion</title>
+    <title>For Zain | The Comeback</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0a0a0a;
-            --accent-color: #d4af37; /* Gold for a champion */
-            --text-color: #f5f5f5;
-            --secondary-text: #b0b0b0;
+            --bg-color: #050505;
+            --accent-color: #d4af37; 
+            --text-color: #ffffff;
+            --secondary-text: #a0a0a0;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            overflow-x: hidden;
-            line-height: 1.6;
+            line-height: 1.7;
+            scroll-behavior: smooth;
         }
 
         section {
@@ -33,90 +29,88 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 40px;
+            padding: 80px 25px;
             text-align: center;
-            border-bottom: 1px solid #222;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+        .container { max-width: 800px; margin: 0 auto; }
 
         h1 {
-            font-size: 3rem;
+            font-size: clamp(2.2rem, 7vw, 3.5rem);
             font-weight: 900;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             text-transform: uppercase;
-            letter-spacing: 2px;
             color: var(--accent-color);
+            letter-spacing: -1px;
         }
 
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: var(--secondary-text);
+        p { font-size: 1.15rem; color: var(--secondary-text); margin-bottom: 20px; }
+
+        .highlight { color: white; font-weight: 700; }
+
+        /* Photo Styles */
+        .photo-frame {
+            width: 100%;
+            max-width: 550px;
+            margin: 40px auto;
+            border: 1px solid #333;
+            padding: 10px;
+            background: #111;
+            border-radius: 4px;
         }
 
-        .highlight {
-            color: var(--text-color);
-            font-weight: 700;
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 2px;
+            /* This gives it a cinematic athlete look */
+            filter: contrast(1.1) brightness(0.9);
         }
 
         .btn {
             background: transparent;
             border: 2px solid var(--accent-color);
             color: var(--accent-color);
-            padding: 15px 30px;
-            text-transform: uppercase;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.3s;
+            padding: 15px 35px;
             text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
             background: var(--accent-color);
-            color: var(--bg-color);
+            color: black;
         }
 
-        /* Specific Page Stylings */
-        #kick-off { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1000') center/cover; }
-        
-        #scars { background-color: #111; }
-        
-        #fan-club { background-color: #0d0d0d; border: 2px solid #222; border-radius: 10px; margin: 20px; }
-
-        .quote {
+        .quote-section {
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            padding: 40px 0;
+            margin: 40px 0;
             font-style: italic;
-            border-left: 4px solid var(--accent-color);
-            padding-left: 20px;
-            margin: 30px 0;
-            text-align: left;
         }
 
-        footer {
-            padding: 40px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #555;
-        }
+        footer { padding: 60px; text-align: center; color: #333; font-size: 0.8rem; letter-spacing: 2px; }
 
-        @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-            p { font-size: 1rem; }
-        }
+        /* Specific section shades to create depth */
+        #scars { background-color: #080808; }
+        #club { background-color: #080808; }
     </style>
 </head>
 <body>
 
-    <section id="kick-off">
+    <section id="home">
         <div class="container">
-            <h1>The Kick-Off</h1>
-            <p>A match is 90 minutes. You’re currently in the tough middle stretch where the legs are heavy and the breath is short. But the game isn't over.</p>
-            <p class="highlight">The Manager is just prepping you for the most legendary late-game winner Karachi has ever seen.</p>
+            <h1>Zain, The Game Isn't Over</h1>
+            <p>Areesh is in the stands. And the second half is about to begin.</p>
+            <div class="photo-frame">
+                <img src="PASTE_LINK_TO_FOOTBALL_PHOTO_HERE" alt="Zain on the pitch">
+            </div>
             <a href="#scars" class="btn">Start the Warmup</a>
         </div>
     </section>
@@ -124,55 +118,60 @@
     <section id="scars">
         <div class="container">
             <h1>Battle Scars</h1>
-            <p>An ACL in 2024. A meniscus in 2026. Most people would have walked away by now. But your body is just a vessel for your spirit—and your spirit is <span class="highlight">unbreakable</span>.</p>
-            <p>Every day of rehab is a quiet victory that no one sees, but everyone will feel when you step back on that grass. Rest is not defeat; it’s strategy.</p>
-            <a href="#dream" class="btn">Next Drill</a>
+            <p>ACL in 2024. Meniscus in 2026.</p>
+            <p>Zain, most people would have quit by now. But your scars aren't weaknesses—they are <span class="highlight">proof that you were brave enough to play hard.</span></p>
+            <p>The body heals, but the heart you have? That's something you're born with. Rest is just the preparation for the comeback.</p>
+            <a href="#dream" class="btn">Keep Going</a>
         </div>
     </section>
 
     <section id="dream">
         <div class="container">
-            <h1>The "Delusional" Dream</h1>
-            <p>I fell in love with the guy who worked harder than everyone else. People call that kind of dedication "delusional," but I call it <span class="highlight">greatness</span>.</p>
-            <div class="quote">
+            <h1>That "Delusional" Spark</h1>
+            <p>I fell in love with your dedication. I fell in love with the way you worked when no one was watching.</p>
+            <div class="photo-frame">
+                <img src="PASTE_LINK_TO_TRAINING_PHOTO_HERE" alt="Zain's Dedication">
+            </div>
+            <div class="quote-section">
                 "Your love makes me strong, your hate makes me unstoppable." — CR7
             </div>
-            <p>Bring back that 'crazy'—it’s your superpower. Don't let a temporary setback kill a permanent dream.</p>
-            <a href="#transfer" class="btn">Keep Going</a>
+            <p>They called you delusional for dreaming big. Zain, don't ever lose that. That spark is exactly what makes you elite.</p>
+            <a href="#club" class="btn">The Next Chapter</a>
         </div>
     </section>
 
-    <section id="transfer">
+    <section id="club">
         <div class="container">
-            <h1>The Transfer List</h1>
-            <p>Karachi United didn’t see the value in the recovery. Since <span class="highlight">July 2025</span>, you’ve been without a club, but you haven't been without a purpose.</p>
-            <p>Being out of form is temporary. Being a fighter is permanent. You aren't a player without a club; you’re a <span class="highlight">Free Agent</span> waiting for a stage that actually deserves your loyalty.</p>
-            <a href="#fan-club" class="btn">See Your Team</a>
+            <h1>Beyond Karachi United</h1>
+            <p>In <span class="highlight">July 2025</span>, a door closed. But the stadium is much bigger than one club.</p>
+            <p>They didn't understand the heart of a fighter. Their lack of vision doesn't define your talent. You aren't "without a club"—you are a world-class talent waiting for the right manager to recognize the fire in your eyes.</p>
+            <a href="#areesh" class="btn">Your #1 Fan</a>
         </div>
     </section>
 
-    <section id="fan-club">
+    <section id="areesh">
         <div class="container">
-            <h1>The Ultimate Fan Club</h1>
-            <p>You keep saying you want to make a comeback. Look around. We are already in the stands. We never left.</p>
-            <p class="highlight">I don’t love you because of the goals you score; I love you because you never give up.</p>
-            <p>Whether you’re on the pitch or in the gym, you’re the MVP of this home. We believe in you more than the game does.</p>
-            <a href="#vision" class="btn">The Final Whistle</a>
+            <h1>Areesh's MVP</h1>
+            <p>I know you're quiet right now. I know it hurts. But I am right here.</p>
+            <div class="photo-frame">
+                <img src="PASTE_LINK_TO_PHOTO_OF_YOU_BOTH_HERE" alt="Zain and Areesh">
+            </div>
+            <p>I don't love you for the goals or the trophies, Zain. I love you for the man you are when things are hard. <span class="highlight">We will get through this.</span></p>
+            <a href="#final" class="btn">Final Message</a>
         </div>
     </section>
 
-    <section id="vision">
+    <section id="final">
         <div class="container">
-            <h1>The Vision</h1>
-            <p>The comeback is always greater than the setback. July 2025 was a closing door, but 2026 is an open field.</p>
-            <p>Take a breath. Find your peace. Then, let’s get back to work. Your story isn't a tragedy; it’s an underdog movie, and we’re just getting to the best part.</p>
-            <h2 style="color:var(--accent-color); margin-top: 30px;">BELIEVE.</h2>
-            <p>SIUUU!</p>
+            <h1>BELIEVE.</h1>
+            <p>One day at a time. One rep at a time.</p>
+            <h1 style="font-size: 5rem; color: white;">SIUUU!</h1>
+            <p style="margin-top: 20px;">I love you, Zain. Your comeback starts now.</p>
         </div>
     </section>
 
     <footer>
-        Designed with love for the future GOAT.
+        ZAIN x AREESH | 2026
     </footer>
 
 </body>
